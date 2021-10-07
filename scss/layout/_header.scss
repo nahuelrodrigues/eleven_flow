@@ -1,0 +1,147 @@
+// Headers
+
+.principal {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.menu {
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    right: 30px;
+}
+
+.posicionManchaUno {
+    position: absolute;
+    width: 30%;
+    top: 20%;
+    mix-blend-mode: normal;
+}
+
+.botonMenu {
+    background: linear-gradient(180deg, #FF0046 99.99%, #531F0E 100%);
+}
+
+.botonMenu:hover {
+    box-shadow: 0px 0px 6px #FFFFFF, 0px 4px 78px rgba(255, 255, 255, 0.6);
+}
+
+.textoTitulo {
+    font-family: 'GidolinyaRegular', sans-serif;
+    position: absolute;
+    z-index: 1;
+    font-style: normal;
+    text-align: right;
+    border-color: $bordeTitulos;
+    color: $colorTitulos;
+    text-shadow: 0 0 3px $bordeTitulos, 0 0 3px $bordeTitulos, 0 0 3px $bordeTitulos, 0 0 3px $bordeTitulos;
+    line-height: 95%;
+    bottom: -1px;
+    font-display: fallback;
+    font-size: 90px;
+    width: 600px;
+    right: 80px;
+}
+
+
+/*.head {
+    background: radial-gradient(67.04% 67.04% at 51.51% 74.44%, #9E1533 0%, #06030D 82.06%);
+}
+*/
+.logo {
+    position: fixed;
+    width: 160px;
+    left: 0px;
+    top: 3px;
+    z-index: 100;
+}
+
+.imagenYoung {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.facebook {
+    position: absolute;
+    width: 3%;
+    right: 30px;
+    top: 20%;
+}
+
+
+.instagram {
+    position: absolute;
+    width: 3%;
+    right: 30px;
+    top: 28%;
+}
+
+.twitter {
+    position: absolute;
+    width: 3%;
+    right: 30px;
+    top: 36%;
+}
+
+.youtube {
+    position: absolute;
+    width: 3%;
+    right: 30px;
+    top: 44%;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover,
+.youtube:hover {
+    box-shadow: 0px 0px 6px #FFFFFF, 0px 4px 78px rgba(255, 255, 255, 0.6);
+}
+
+.titulo {
+    position: absolute;
+    height: 199px;
+    left: 30px;
+    top: 35%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 64px;
+    line-height: 60px;
+
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 6px #FFFFFF, 0px 4px 78px rgba(255, 255, 255, 0.6);
+}
+
+.elevenFlow {
+    position: absolute;
+    width: 10%;
+    right: 20%;
+    top: 1%;
+}
+
+.contacto {
+    position: absolute;
+    width: 8.5%;
+    right: 3%;
+    top: 5%;
+
+}
+
+
+.imagenYoung {
+    width: 55vw;
+    height: auto;
+    max-width: 1600px;
+    bottom: 0px;
+    left: 20%;
+    z-index: 5;
+}

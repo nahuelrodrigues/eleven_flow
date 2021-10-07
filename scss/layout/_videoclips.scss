@@ -1,0 +1,47 @@
+/* Seccion Videoclips */
+
+.tituloVideo {
+    font-family: Roboto;
+    font-size: $sizeTit;
+    padding: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    background: rgba(216, 33, 73, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+  
+    color: #FFFFFF;
+    text-shadow: rgba(65, 245, 220, 0.56);
+  
+  
+    @include media(xs) {
+      font-size: 1.4rem;
+    }
+  
+    @include media(sm) {
+      font-size: 1.8rem;
+    }
+  
+    @include media(md) {
+      font-size: 2rem;
+    }
+  }
+
+.fondoVideoclips {
+    background: linear-gradient(90deg, #06030D 0%, #9E1533 100%);
+}
+
+.sizeVideo {
+    width: 105%;
+    z-index: 5;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0445313) 57.29%, rgba(0, 0, 0, 0.15) 100%);
+}
+
+
+.paredLadrillo {
+    width: 100%;
+    height: auto;
+    background-image: url("../../img/paredLadrillo.png");
+    background-size: cover;
+}

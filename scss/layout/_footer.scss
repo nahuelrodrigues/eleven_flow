@@ -1,0 +1,88 @@
+/* Footer */
+
+.tituloFooter {
+    font-family: 'GidolinyaRegular', sans-serif;
+    font-size: $sizeTit;
+    font-weight: bolder;
+    font-display: fallback;
+
+    @include media(xs) {
+        font-size: 1.4rem;
+    }
+
+    @include media(sm) {
+        font-size: 1.8rem;
+    }
+
+    @include media(md) {
+        font-size: 2rem;
+    }
+}
+
+.fondoFooter {
+    background: url("../../img/footerTexture.png");
+    mix-blend-mode: overlay;
+
+}
+
+.footerIndex {
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sizeTextoFooter {
+    padding: 1.5%;
+    font-size: 1.3rem;
+    color: $colorTitulos;
+
+    @include media(xs) {
+        font-size: .6rem;
+    }
+
+    @include media(sm) {
+        font-size: .7rem;
+    }
+
+    @include media(md) {
+        font-size: .9rem;
+    }
+
+    @include media(lg) {
+        font-size: 1.1rem;
+    }
+}
+
+.sizeTextoFooterContacto {
+    font-size: .8rem;
+    color: $colorTitulos;
+
+    @include media(xs) {
+        font-size: .85rem;
+    }
+
+    @include media(sm) {
+        font-size: .9rem;
+    }
+
+    @include media(md) {
+        font-size: 1rem;
+    }
+
+    @include media(lg) {
+        font-size: 1.1rem;
+    }
+}
+
+
+.fondoContacto {
+    background: linear-gradient(90deg, #06030D 0%, #9E1533 100%);
+}
+
+.fotoContacto {
+    width: 50%;
+    z-index: 5;
+    bottom: 0;
+    visibility: inherit;
+}
+

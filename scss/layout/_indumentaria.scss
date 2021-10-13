@@ -8,7 +8,6 @@
     font-weight: bolder;
     box-shadow: inset 0 0.5em 1.5em rgba(164, 170, 164, 0.705), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 
-
     @include media(xs) {
         font-size: 1.4rem;
     }
@@ -22,17 +21,26 @@
     }
 }
 
-#trabajos {
-    width: 100%;
-    height: 100vh;
-    background: url("../../img/trabajos.jpg") top center;
-    background-size: cover;
-    position: relative;
-    padding: 0;
-}
 
 .fondoIndumentaria {
     background: linear-gradient(90deg, #06030D 0%, #9E1533 100%);
+    height: 950px;
+
+  @include media(xs) {
+    height: 400px;
+  }
+
+  @include media(sm) {
+    height: 500px;
+  }
+
+  @include media(md) {
+    height: 650px;
+  }
+
+  @include media(lg) {
+    height: 950px;
+  }
 }
 
 .imagenIndumentaria {
@@ -46,20 +54,34 @@
 
 .proximamente {
     position: relative;
-
-
-    right: 15%;
-    bottom: 100px;
-
-    font-family: Fugaz One;
+    right: 30%;
     font-style: normal;
     font-weight: normal;
-    font-size: 300%;
     line-height: 75%;
-
     text-align: right;
     color: #FFFFFF;
-
     transform: rotate(-20.87deg);
+
+    @include media(xs) {
+        font-size: 1rem;
+        top: -5rem;
+        right: 22%;
+    }
+
+    @include media(sm) {
+        font-size: 1.8rem;
+        top: 0.1rem;
+        right: 22%;
+    }
+
+    @include media(md) {
+        font-size: 2.2rem;
+        top: 12rem;
+        right: 17%;
+    }
+    @include media(lg) {
+        font-size: 3rem;
+        top: 30rem;
+    }
 
 }

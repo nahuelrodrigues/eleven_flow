@@ -20,7 +20,8 @@
 }
 
 .fondoFooter {
-    background: url("../../img/footerTexture.png");
+    background: url("../img/footerTexture.png");
+    
     mix-blend-mode: overlay;
 
 }
@@ -54,8 +55,7 @@
 }
 
 .sizeTextoFooterContacto {
-    font-size: .8rem;
-    color: $colorTitulos;
+    font-size: .1rem;
 
     @include media(xs) {
         font-size: .85rem;
@@ -66,11 +66,11 @@
     }
 
     @include media(md) {
-        font-size: 1rem;
+        font-size: .7rem;
     }
 
     @include media(lg) {
-        font-size: 1.1rem;
+        font-size: .8rem;
     }
 }
 
@@ -80,9 +80,42 @@
 }
 
 .fotoContacto {
-    width: 50%;
+    position: relative;
+    width: 90%;
     z-index: 5;
     bottom: 0;
     visibility: inherit;
+    @include media(xs) {
+        width: 90%;
+    }
+
+    @include media(sm) {
+        width: 80%;
+    }
+
+    @include media(md) {
+        width: 85%;
+    }
 }
 
+.mail {
+    display: flex;
+    z-index: 7;
+    width: 80%;
+    position: relative;
+    @include media(md) {
+        width: 30%;
+    }
+    @include media(sm) {
+        width: 50%;
+    }
+
+    @include media(lg) {
+        width: 50%;
+    }
+
+}
+
+.fondoFinal {
+    background-color: #100a1f;
+}

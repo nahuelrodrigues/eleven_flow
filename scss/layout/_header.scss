@@ -29,69 +29,130 @@
     box-shadow: 0px 0px 6px #FFFFFF, 0px 4px 78px rgba(255, 255, 255, 0.6);
 }
 
-.textoTitulo {
-    font-family: 'GidolinyaRegular', sans-serif;
-    position: absolute;
-    z-index: 1;
-    font-style: normal;
-    text-align: right;
-    border-color: $bordeTitulos;
-    color: $colorTitulos;
-    text-shadow: 0 0 3px $bordeTitulos, 0 0 3px $bordeTitulos, 0 0 3px $bordeTitulos, 0 0 3px $bordeTitulos;
-    line-height: 95%;
-    bottom: -1px;
-    font-display: fallback;
-    font-size: 90px;
-    width: 600px;
-    right: 80px;
-}
 
-
-/*.head {
+.head {
     background: radial-gradient(67.04% 67.04% at 51.51% 74.44%, #9E1533 0%, #06030D 82.06%);
 }
-*/
+
 .logo {
     position: fixed;
     width: 160px;
     left: 0px;
     top: 3px;
     z-index: 100;
+    @include media(xs) {
+        width: 80px;
+    }
+    @include media(sm) {
+        width: 100px;
+    }
+    @include media(md) {
+        width: 120px;
+    }
 }
 
 .imagenYoung {
     width: 100%;
     height: auto;
-    position: absolute;
 }
 
 .facebook {
     position: absolute;
-    width: 3%;
+    width: 65px;
     right: 30px;
-    top: 20%;
+    top: 9rem;
+    @include media(xs) {
+        width: 30px;
+        top: 4rem;
+    }
+    @include media(sm) {
+        width: 40px;
+        top: 4rem;
+    }
+    @include media(md) {
+        width: 50px;
+        top: 5rem;
+    }
 }
 
 
 .instagram {
     position: absolute;
-    width: 3%;
+    width: 65px;
     right: 30px;
-    top: 28%;
+    top: 13.5rem;
+    @include media(xs) {
+        width: 30px;
+        top: 6rem;
+    }
+    @include media(sm) {
+        width: 40px;
+        top: 6.5rem;
+    }
+    @include media(md) {
+        width: 50px;
+        top: 8.5rem;
+    }
+
 }
 
 .twitter {
     position: absolute;
-    width: 3%;
+    width: 65px;
     right: 30px;
-    top: 36%;
+    top: 18rem;
+    @include media(xs) {
+        width: 30px;
+        top: 8rem;
+    }
+    @include media(sm) {
+        width: 40px;
+        top: 9rem;
+    }
+    @include media(md) {
+        width: 50px;
+        top: 12rem;
+    }
 }
 
 .youtube {
     position: absolute;
-    width: 3%;
+    width: 65px;
     right: 30px;
-    top: 44%;
+    top: 22.5rem;
+    @include media(xs) {
+        width: 30px;
+        top: 10rem;
+    }
+    @include media(sm) {
+        width: 40px;
+        top: 11.5rem;
+    }
+    @include media(md) {
+        width: 50px;
+        top: 15.5rem;
+    }
+
+}
+
+.twitch {
+    position: absolute;
+    width: 65px;
+    right: 30px;
+    top: 27em;
+    @include media(xs) {
+        width: 30px;
+        top: 12rem;
+    }
+    @include media(sm) {
+        width: 40px;
+        top: 14rem;
+    }
+    @include media(md) {
+        width: 50px;
+        top: 19rem;
+    }
+
 }
 
 .facebook:hover,
@@ -105,20 +166,31 @@
     position: absolute;
     height: 199px;
     left: 30px;
-    top: 35%;
-
+    top: 20rem;
     font-family: Roboto;
     font-style: normal;
     font-weight: bolder;
-    font-size: 64px;
-    line-height: 60px;
-
+    font-size: 4rem;
+    line-height: 5rem;
     text-align: center;
     letter-spacing: 1px;
-
     color: #FFFFFF;
-
     text-shadow: 0px 0px 6px #FFFFFF, 0px 4px 78px rgba(255, 255, 255, 0.6);
+    @include media(xs) {
+        font-size: .8rem;    
+        line-height: .9rem;
+        top: 8rem;
+    }
+    @include media(sm) {
+        font-size: 1rem;    
+        line-height: 2rem;
+        top: 10rem;
+    }
+    @include media(md) {
+        font-size: 2rem;    
+        line-height: 3rem;
+        top: 15rem;
+    }
 }
 
 .elevenFlow {
@@ -136,12 +208,48 @@
 
 }
 
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
 
 .imagenYoung {
+    display: flex;
     width: 55vw;
     height: auto;
     max-width: 1600px;
-    bottom: 0px;
-    left: 20%;
+    top: 13rem;
     z-index: 5;
+}
+
+/* Barra Nav */
+.style-nav {
+    background-color: #06030d;
+}
+
+.navTrabajo:hover {
+    color: white;
+}
+
+.sizeFontNavBar {
+    z-index: 50;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    font-size: 1rem;
+    @include media(xs) {
+        right: 17%;
+        font-size: .5rem;
+    }
+    @include media(sm) {
+        right: 7%;
+        font-size: .8rem;
+    }
+    @include media(md) {
+        right: 7%;
+        font-size: .8rem;
+    }
 }
